@@ -4,7 +4,7 @@ let button = document.getElementById("btn");
 let name = document.getElementById("name");
 let gender = document.getElementById("gender");
 let email = document.getElementById("email");
-let dob = document.getElementById("dob");
+let username = document.getElementById("username");
 let pic = document.getElementById("pic");
 
 let person = {};
@@ -16,8 +16,9 @@ function populateResults(person) {
   name.innerText = `${title} ${first} ${last}`;
   gender.innerText = person.gender;
   email.innerText = person.email;
-  dob.innerText = moment(person.dob.date);
+  username.innerText = person.login.username;
   pic.src = person.picture.large;
+  console.log(typeof person.dob.date);
 }
 
 button.addEventListener("click", () => {

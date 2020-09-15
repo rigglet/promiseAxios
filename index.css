@@ -10,8 +10,28 @@ body {
   background-color: hsla(106, 100%, 17%, 0.473);
 }
 
+h1,
+h2,
+h3,
+image,
+button {
+  margin-bottom: 3vh;
+}
+
+button,
 h1 {
-  margin: 3vh auto;
+  min-width: 50%;
+  text-align: center;
+  margin-top: 3vh;
+  background-color: rgb(197, 197, 197);
+  border-radius: 10px;
+  padding: 2%;
+}
+
+section {
+  background-color: rgb(197, 197, 197);
+  border-radius: 10px;
+  padding: 2%;
 }
 
 button {
@@ -21,10 +41,27 @@ button {
   padding: 10px;
   font-weight: bold;
   font-size: 1.2rem;
+  /* letter-spacing: 1rem; */
+  /* initial-letter: 4; */
+  initial-letter-align: 20%;
 }
 
-.mainContainer {
+button:hover {
+  letter-spacing: 0.2rem;
+  transition: 0.3s ease-out;
+}
+
+button:focus {
+  border: none;
+}
+
+.mainContainer,
+section {
+  min-width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+  /* align-items: center;
+  align-content: space-around; */
 }
